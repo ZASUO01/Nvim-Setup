@@ -4,7 +4,6 @@ return {
   config = function()
     local alpha = require("alpha")
     local dashboard = require("alpha.themes.dashboard")
-    local fortune  = require("alpha.fortune")
 
     dashboard.section.header.val = {
     -- "                                                     ",
@@ -28,10 +27,9 @@ return {
       dashboard.button("SPC ee", " > Toggle File Explorer", "<cmd>Neotree toggle<cr>"),
       dashboard.button("SPC ff", "󰮗 > Find File", "<cmd>Telescope find_files<cr>"),
       dashboard.button("SPC fg", " > Find Word", "<cmd>Telescope live_grep<cr>"),
+      dashboard.button("SPC wr", "󰑓 > Restore Session", "<cmd>SessionRestore<cr>"), 
       dashboard.button("q", "󰿅 > Quit Nvim", "<cmd>qa<cr>"),
     }
-
-    dashboard.section.footer.val = fortune()
 
     alpha.setup(dashboard.opts)
 
