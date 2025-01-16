@@ -33,7 +33,7 @@ return {
 
       local keymap = vim.keymap
 
-      keymap.set("n", "<C-b>", "<cmd>Neotree toggle<cr>", { desc = "toggle neotree" })
-      keymap.set("n", "<C-n>", "<cmd>Neotree focus<cr>", { desc = "focus on current neotree" })
+      keymap.set("n", "<leader>ee", "<cmd>Neotree toggle<cr>", { desc = "toggle neotree" })
+      keymap.set("n", "<leader>ef", "<cmd>Neotree focus<cr>", { desc = "focus on current neotree" })
     end
 }
