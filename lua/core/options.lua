@@ -1,6 +1,6 @@
 local opt = vim.opt
 
-opt.shell = "/bin/zsh"
+opt.shell = "/bin/bash"
 opt.relativenumber = true
 opt.number = true
 opt.tabstop = 2
