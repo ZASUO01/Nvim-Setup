@@ -30,9 +30,5 @@ return {
 				})
 			end,
 		})
-
-		local keymap = vim.keymap
-
-		keymap.set("n", "K", vim.lsp.buf.hover)
 	end,
 }
