@@ -10,7 +10,7 @@ local function set_theme(theme)
 end
 
 -- default theme
-vim.g.current_theme = themes[1]
+vim.g.current_theme = themes[2]
 set_theme(vim.g.current_theme)
 
 local function index_of(table, value)
